@@ -14,7 +14,7 @@ namespace Tyuiu.NeldnerMK.Sprint2.Task2.V6.Lib
         public bool CheckDotInShadedArea(int x, int y)
         {
             bool res;
-
+            ааа
            
             
 
