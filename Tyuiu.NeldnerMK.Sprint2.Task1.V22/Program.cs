@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Tyuiu.NeldnerMK.Sprint2.Task1.V22.Lib;
 
 
-namespace Tyuiu.NeldnerMK.Sprint2.Task1.V22.V1
+namespace Tyuiu.NeldnerMK.Sprint2.Task1.V22
 {
     class Program
     {
