@@ -13,7 +13,7 @@ namespace Tyuiu.NeldnerMK.Sprint2.Task2.V6
     {
         static void Main(string[] args)
         {
-            Console.Title = "Спринт №1 | Выполнил: Нельднер М. К. | СМАРТб-25-1";
+            Console.Title = "Спринт №1 | Выполнил: Нельднер М. К . | СМАРТб-25-1";
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* Спринт  #2                                                                *");
             Console.WriteLine("* Задание #1                                                               *");
