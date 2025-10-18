@@ -1,25 +1,33 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.NeldnerMK.Sprint2.Task1.V22.Lib;
+using Tyuiu.NeldnerMK.Sprint2.Task4.V6.Lib;
 
-namespace Tyuiu.NeldnerMK.Sprint2.Task1.V22.Test
+namespace Tyuiu.NeldnerMK.Sprint2.Task4.V6.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidGetCompareOperations()
+        public void ValidGetCompare1()
         {
             DataService ds = new DataService();
-            int x = 324;
-            int y = 696;
-            int c = 254;
-            int d = 155;
-            bool[] res = new bool[6];
-            res = ds.GetLogicOperations(x, y, c, d);
-            bool[] wait1 = new bool[6] { true, true, true, false, false, false };
+            double x = 8;
+            double y = 12;
+            double res = ds.Calculate(x, y);
+            double wait = 8.157;
+            Assert.AreEqual(wait, res, 0.001);
 
-            CollectionAssert.AreEqual(wait1, res);
+        }
+
+        [TestMethod]
+        public void ValidGetCompare2()
+        {
+            DataService ds = new DataService();
+            double x = 10;
+            double y = 20;
+            double res = ds.Calculate(x, y);
+            double wait = 420.6;
+            Assert.AreEqual(wait, res, 0.001);
 
         }
     }

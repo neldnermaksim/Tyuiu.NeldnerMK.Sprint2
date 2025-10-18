@@ -26,13 +26,16 @@ namespace Tyuiu.NeldnerMK.Sprint2.Task4.V6
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ: ");
             Console.WriteLine();
 
-            Console.Write("Введите x: ");
+            Console.Write("Введите X: ");
             double x = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Введите Y: ");
+            double y = Convert.ToDouble(Console.ReadLine());
 
 
 
             DataService ds = new DataService();
-            double res = ds.Calculate(x);
+            double res = ds.Calculate(x,y);
 
 
             Console.WriteLine("****************************************************************************");
