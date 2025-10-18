@@ -43,7 +43,7 @@ namespace Tyuiu.NeldnerMK.Sprint2.Task4.V6
             Console.WriteLine("****************************************************************************");
 
 
-            Console.WriteLine(res);
+            Console.WriteLine(res, 0.001);
 
         }
     }
