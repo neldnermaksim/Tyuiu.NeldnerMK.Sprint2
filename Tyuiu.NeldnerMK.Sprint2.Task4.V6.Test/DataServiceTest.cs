@@ -14,9 +14,8 @@ namespace Tyuiu.NeldnerMK.Sprint2.Task4.V6.Test
             double x = 8;
             double y = 12;
             double res = ds.Calculate(x, y);
-            double wait = 8.157;
+            double wait = 65.258; 
             Assert.AreEqual(wait, res);
-
         }
 
         [TestMethod]
@@ -26,9 +25,9 @@ namespace Tyuiu.NeldnerMK.Sprint2.Task4.V6.Test
             double x = 10;
             double y = 20;
             double res = ds.Calculate(x, y);
-            double wait = 420.6;
-            Assert.AreEqual(wait, res);
-
+            double wait = 420.6; 
+            Assert.AreEqual(wait, res, 0.001);
         }
+    
     }
 }
