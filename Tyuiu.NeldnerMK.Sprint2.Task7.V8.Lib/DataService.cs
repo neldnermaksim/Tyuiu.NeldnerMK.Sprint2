@@ -10,16 +10,26 @@ namespace Tyuiu.NeldnerMK.Sprint2.Task7.V8.Lib
     {
         public bool CheckDotInShadedArea(double x, double y)
         {
-            bool res = (x >= 0) && (y <= 4) && (y >= Math.Pow(x, 3)); 
+            bool result = false;
 
-            if (res)
+            // Условие для первой области (0 <= x <= 2)
+            if (x >= 0 && x <= 2)
             {
-                return true;
+                if (y >= Math.Pow(x, 3) && y <= 4)
+                {
+                    result = true;
+                }
             }
-            else
+            // Условие для второй области (x > 2)
+            else if (x > 2)
             {
-                return false;
+                if (y >= 0 && y <= 4)
+                {
+                    result = true;
+                }
             }
+
+            return result;
         }
     }
-}        
+}
