@@ -12,7 +12,6 @@ namespace Tyuiu.NeldnerMK.Sprint2.Task7.V8.Lib
         {
             bool result = false;
 
-            // Условие для первой области (0 <= x <= 2)
             if (x >= 0 && x <= 2)
             {
                 if (y >= Math.Pow(x, 3) && y <= 4)
@@ -20,7 +19,6 @@ namespace Tyuiu.NeldnerMK.Sprint2.Task7.V8.Lib
                     result = true;
                 }
             }
-            // Условие для второй области (x > 2)
             else if (x > 2)
             {
                 if (y >= 0 && y <= 4)
