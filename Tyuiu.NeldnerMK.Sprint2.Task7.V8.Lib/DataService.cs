@@ -10,7 +10,7 @@ namespace Tyuiu.NeldnerMK.Sprint2.Task7.V8.Lib
     {
         public bool CheckDotInShadedArea(double x, double y)
         {
-            bool res = (y >= x * x) && (y <= 4) && (x >= -2) && (x <= 2);
+            bool res = (x >= 0 && x <= 2 && y >= x * x && y <= 4);
 
             if (res)
             {
