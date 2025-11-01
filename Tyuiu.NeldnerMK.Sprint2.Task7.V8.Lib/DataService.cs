@@ -14,7 +14,7 @@ namespace Tyuiu.NeldnerMK.Sprint2.Task7.V8.Lib
 
             if (x >= 0 && x <= 2)
             {
-                if (y >= Math.Pow(x, 3) && y <= 4)
+                if (y >= Math.Pow(x, 2) && y <= 4)
                 {
                     result = true;
                 }
